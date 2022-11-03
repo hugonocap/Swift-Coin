@@ -12,7 +12,12 @@ struct HomeView: View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
                 
+                // MARK: Top movers view
+                
+                // MARK: All coins View
             }
+            // MARK: Title
+            .navigationTitle("Live Prices")
         }
     }
 }
