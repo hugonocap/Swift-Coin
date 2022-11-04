@@ -39,9 +39,13 @@ class HomeViewModel: ObservableObject {
             
             // makes sure we actually get a data and if we don't  we'll just stop the function with "return"
             guard let data = data else { return }
-            print("DEBUG: Data \(data)")
+            
+            // this variable converts all data to string, then we print it into console
+            let dataAsString = String(data: data, encoding: .utf8)
+            print("DEBUG: Data \(dataAsString)")
             
         }
+        //! REALLY IMPORTANT!!! Without this thing the "URLSession" will never run and get data!
         .resume()
     }
     
