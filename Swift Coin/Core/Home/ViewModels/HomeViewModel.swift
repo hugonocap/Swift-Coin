@@ -24,7 +24,7 @@ class HomeViewModel: ObservableObject {
         guard let url = URL(string: urlString) else { return }
         
         // request to url and then download all data
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+        URLSession.shared.dataTask(with: url) { data, response, error in
             
             // error
             if let error = error {
@@ -42,6 +42,7 @@ class HomeViewModel: ObservableObject {
             print("DEBUG: Data \(data)")
             
         }
+        .resume()
     }
     
 }

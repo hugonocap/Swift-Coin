@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
+    // We put our observable object into "viewModel" variable
+    @StateObject var viewModel = HomeViewModel()
+    
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
