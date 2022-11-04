@@ -18,7 +18,7 @@ struct HomeView: View {
                 Divider()
                 
                 // MARK: All coins View
-                
+                AllCoinsView()
                 
             }
             // MARK: Title
