@@ -13,6 +13,7 @@ struct HomeView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 
                 // MARK: Top movers view
+                TopMoversView()
                 
                 // MARK: All coins View
             }
