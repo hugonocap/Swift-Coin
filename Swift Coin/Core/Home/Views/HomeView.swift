@@ -15,10 +15,15 @@ struct HomeView: View {
                 // MARK: Top movers view
                 TopMoversView()
                 
+                Divider()
+                
                 // MARK: All coins View
+                
+                
             }
             // MARK: Title
             .navigationTitle("Live Prices")
+            
         }
     }
 }
