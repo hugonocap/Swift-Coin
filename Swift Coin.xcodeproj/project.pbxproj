@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D91722CE29159DDC00FBAB97 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91722CD29159DDC00FBAB97 /* HomeViewModel.swift */; };
+		D9350C9E2915E73500A4687E /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9350C9D2915E73500A4687E /* Coin.swift */; };
 		D9B955EB29146FB4001633A3 /* Swift_CoinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B955EA29146FB4001633A3 /* Swift_CoinApp.swift */; };
 		D9B955ED29146FB4001633A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B955EC29146FB4001633A3 /* ContentView.swift */; };
 		D9B955EF29146FB5001633A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9B955EE29146FB5001633A3 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		D91722CD29159DDC00FBAB97 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D9350C9D2915E73500A4687E /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		D9B955E729146FB4001633A3 /* Swift Coin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Coin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B955EA29146FB4001633A3 /* Swift_CoinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_CoinApp.swift; sourceTree = "<group>"; };
 		D9B955EC29146FB4001633A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		D9B955FA29147034001633A3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D9350C9D2915E73500A4687E /* Coin.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9350C9E2915E73500A4687E /* Coin.swift in Sources */,
 				D9B95603291472B9001633A3 /* TopMoversView.swift in Sources */,
 				D9F80411291505CA0025BF76 /* AllCoinsView.swift in Sources */,
 				D9B95601291470FB001633A3 /* HomeView.swift in Sources */,
