@@ -40,9 +40,13 @@ class HomeViewModel: ObservableObject {
             // makes sure we actually get a data and if we don't  we'll just stop the function with "return"
             guard let data = data else { return }
             
-            // this variable converts all data to string, then we print it into console
-            let dataAsString = String(data: data, encoding: .utf8)
-            print("DEBUG: Data \(dataAsString)")
+            // JSON Decoder (getting data and converting to "Coin")
+            do {
+                let coins = try JSONDecoder().decode([Coin].self, from: data)
+                print("DEBUG: Coins \(coins)")
+            } catch let error {
+                print("DEBUG: Failed to decode with error: \(error)")
+            }
             
         }
         //! REALLY IMPORTANT!!! Without this thing the "URLSession" will never run and get data!
