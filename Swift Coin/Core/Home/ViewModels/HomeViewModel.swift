@@ -9,6 +9,8 @@ import Foundation
 
 class HomeViewModel: ObservableObject {
     
+    @Published var coins = [Coin]()
+    
     // this function call "fetchCoinData" and complete all stuff below
     init() {
         fetchCoinData()
@@ -40,10 +42,10 @@ class HomeViewModel: ObservableObject {
             // makes sure we actually get a data and if we don't  we'll just stop the function with "return"
             guard let data = data else { return }
             
-            // JSON Decoder (getting data and converting to "Coin")
+            // JSON Decoder (getting data and converting to array of Coin)
             do {
                 let coins = try JSONDecoder().decode([Coin].self, from: data)
-                print("DEBUG: Coins \(coins)")
+                self.coins = coins 
             } catch let error {
                 print("DEBUG: Failed to decode with error: \(error)")
             }
