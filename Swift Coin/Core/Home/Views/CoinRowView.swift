@@ -46,7 +46,7 @@ struct CoinRawView: View {
                     .fontWeight(.bold)
                 Text(coin.priceChangePercentage24H.toPercent())
                     .font(.caption)
-                    .foregroundColor(.red)
+                    .foregroundColor(coin.priceChangePercentage24H > 0 ? .green : .red)
             }
             
         }
