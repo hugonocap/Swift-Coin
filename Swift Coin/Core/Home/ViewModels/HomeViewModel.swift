@@ -10,6 +10,7 @@ import Foundation
 class HomeViewModel: ObservableObject {
     
     @Published var coins = [Coin]()
+    @Published var topMovingCoins = [Coin]()
     
     // this function call "fetchCoinData" and complete all stuff below
     init() {
@@ -45,7 +46,10 @@ class HomeViewModel: ObservableObject {
             // JSON Decoder (getting data and converting to array of Coin)
             do {
                 let coins = try JSONDecoder().decode([Coin].self, from: data)
-                self.coins = coins 
+                DispatchQueue.main.async {
+                    self.coins = coins
+                    self.configureTopMovingCoins()
+                }
             } catch let error {
                 print("DEBUG: Failed to decode with error: \(error)")
             }
@@ -53,6 +57,13 @@ class HomeViewModel: ObservableObject {
         }
         //! REALLY IMPORTANT!!! Without this thing the "URLSession" will never run and get data!
         .resume()
+    }
+    
+    // At the top of list will be coin that changed the most in the last 24h
+    func configureTopMovingCoins() {
+        let topMovers = coins.sorted(by: { $0.priceChangePercentage24H > $1.priceChangePercentage24H})
+        // how many containers in the list
+        self.topMovingCoins = Array(topMovers.prefix(10))
     }
     
 }

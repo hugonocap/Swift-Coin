@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct CoinRawView: View {
     var coin: Coin
@@ -17,7 +18,7 @@ struct CoinRawView: View {
                 .foregroundColor(.gray )
             
             // MARK: Image
-            Image(systemName: "bitcoinsign.circle.fill")
+            KFImage(URL(string: coin.image))
                 .resizable()
                 .scaledToFit()
                 .frame(width: 32, height: 32)
