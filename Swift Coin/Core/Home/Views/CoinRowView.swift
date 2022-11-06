@@ -1,5 +1,5 @@
 //
-//  CoinRawView.swift
+//  CoinRowView.swift
 //  Swift Coin
 //
 //  Created by Hugo on 4.11.22.
@@ -41,10 +41,10 @@ struct CoinRawView: View {
             
             // MARK: Coin price info
             VStack(alignment: .trailing, spacing: 4) {
-                Text("\(coin.currentPrice)")
+                Text(coin.currentPrice.toCurrency())
                     .font(.subheadline)
                     .fontWeight(.bold)
-                Text("\(coin.priceChangePercentage24H)")
+                Text(coin.priceChangePercentage24H.toPercent())
                     .font(.caption)
                     .foregroundColor(.red)
             }

@@ -19,7 +19,7 @@
 		D9B95603291472B9001633A3 /* TopMoversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B95602291472B9001633A3 /* TopMoversView.swift */; };
 		D9B95605291472D2001633A3 /* TopMoversItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B95604291472D2001633A3 /* TopMoversItemView.swift */; };
 		D9F80411291505CA0025BF76 /* AllCoinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F80410291505CA0025BF76 /* AllCoinsView.swift */; };
-		D9F80413291505E20025BF76 /* CoinRawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F80412291505E20025BF76 /* CoinRawView.swift */; };
+		D9F80413291505E20025BF76 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F80412291505E20025BF76 /* CoinRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		D9B95602291472B9001633A3 /* TopMoversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversView.swift; sourceTree = "<group>"; };
 		D9B95604291472D2001633A3 /* TopMoversItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversItemView.swift; sourceTree = "<group>"; };
 		D9F80410291505CA0025BF76 /* AllCoinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoinsView.swift; sourceTree = "<group>"; };
-		D9F80412291505E20025BF76 /* CoinRawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRawView.swift; sourceTree = "<group>"; };
+		D9F80412291505E20025BF76 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +144,7 @@
 				D9B95602291472B9001633A3 /* TopMoversView.swift */,
 				D9B95604291472D2001633A3 /* TopMoversItemView.swift */,
 				D9F80410291505CA0025BF76 /* AllCoinsView.swift */,
-				D9F80412291505E20025BF76 /* CoinRawView.swift */,
+				D9F80412291505E20025BF76 /* CoinRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -240,7 +240,7 @@
 				D91722CE29159DDC00FBAB97 /* HomeViewModel.swift in Sources */,
 				D9B955ED29146FB4001633A3 /* ContentView.swift in Sources */,
 				D9B955EB29146FB4001633A3 /* Swift_CoinApp.swift in Sources */,
-				D9F80413291505E20025BF76 /* CoinRawView.swift in Sources */,
+				D9F80413291505E20025BF76 /* CoinRowView.swift in Sources */,
 				D9532B402918055B00D78767 /* Double.swift in Sources */,
 				D9B95605291472D2001633A3 /* TopMoversItemView.swift in Sources */,
 			);
