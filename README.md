@@ -4,6 +4,7 @@
 
 Swift Coin is an application in which you can follow the prices of cryptocurrencies in real time thanks to live data API.
 In app you will see top movers crypto's for last 24 hours and huge list of currencies sorted by market cap.
+I also used MVVM architecture to create this app.
 
 ## Screenshots
 
